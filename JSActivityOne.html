@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        function showName() {
+            console.log("Calculating...");
+            var shipping = 0;
+            var shipClass = 0;
+            if (document.getElementById("class1").checked)
+                shipClass = 5;
+            if (document.getElementById("r1").checked)
+                shipping = 2;
+            else if (document.getElementById("r2").checked)
+                shipping = 5;
+            else if (document.getElementById("r3").checked)
+                shipping = 10;
+            var price = (document.getElementById("weight").value * shipping)+shipClass;
+            document.getElementById('displayName').innerHTML = document.getElementById('firstName').value + ",<br> Your total cost is: £" + price.toString();
+            document.getElementById('displayName').style.padding = "5px";
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #33333D;
+            color: #ffffff;
+        }
+        div {
+            font-family: Arial;
+            <!--background-color: ;-->
+            color: #000000;
+            padding: 0px;
+        }
+        h1{
+            background-color: #27262F;
+            color: #1FB880;
+            padding: 20px 50px 20px 50px;
+        }
+        label {
+            <!--background-color: #4db6ac;-->
+            padding: 5px;
+        }
+        input.text{
+            background-color: #27262F;
+            padding: 3px;
+            border: 2px solid #585862;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<h1>A simple Postage calculator</h1>
+<form style="color: #B25DFF; background-color: #37373F; padding: 10px; width: 35%;">
+    <label style="color: #FF6759">Please enter your name: <input class="text" type="text" id="firstName" name="firstName"> </label> <br></br>
+    <label style="color: #FF6759">Please enter the package weight: <input class="text" type="text" id="weight" name="weight">kg</label> <br></br>
+    <label style="color: #FFD044">1st Class Delivery? Additional £5 <input class="text" type="checkbox" name="class1" id="class1"></label>
+    <h4 style="color: #ffffff">Where are you sending the package to?</h4>
+    <input type="radio" id="r1" name="rate" value="United Kingdom" checked="checked"> United Kingdom - £2 per kilo <br>
+    <input type="radio" id="r2" name="rate" value="Europe"> Europe - £5 per kilo <br>
+    <input type="radio" id="r3" name="rate" value="United States of America"> United States of America - £10 per kilo <br>
+</form>
+<br>
+<button style="color: #71DEFF; background-color: #585862;" onclick="showName()">Calculate Cost</button>
+<br></br>
+<div style="color: #72deff; background-color: #585862; width: 35%;" id="displayName"></div>
+</body>
+</html>

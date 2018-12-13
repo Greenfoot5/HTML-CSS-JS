@@ -1,0 +1,12 @@
+body{
+     font-family: Arial;
+ }
+span.topic{
+    color: #0000ff;
+    font-style: italic;
+}
+h1{
+    background-color: tomato;
+    color: ghostwhite;
+    padding: 20px;
+}
