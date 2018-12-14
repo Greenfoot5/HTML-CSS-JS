@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    background-color: #33333D;
+    color: #ffffff;
+}
+div {
+    font-family: Arial;
+<!--background-color: ;-->
+    color: #000000;
+    padding: 0px;
+}
+h1{
+    background-color: #27262F;
+    color: #1FB880;
+    padding: 20px 50px 20px 50px;
+}
+label {
+<!--background-color: #4db6ac;-->
+    padding: 5px;
+}
+input.text{
+    background-color: #27262F;
+    padding: 3px;
+    border: 2px solid #585862;
+    color: #ffffff;
+}
+select.text{
+    background-color: #27262F;
+    color: #ffffff;
+    border: 1px solid #585862;
+}
