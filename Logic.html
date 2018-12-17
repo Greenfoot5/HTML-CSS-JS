@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="LogicStyles.css" type="text/css">
 <head>
     <meta charset="UTF-8">
-    <title>Logic Gates</title>
+    <title>Logic gates</title>
+    <!--       _
+           .__(.)< (Quack)
+            \___)
+    ~~~~~~~~~~~~~~~~~~
+    Every programmer
+    needs a rubber duck.-->
 </head>
 <body>
-
+    <h1>Logic Gate Teacher</h1>
+    <form style="color: #B25DFF; background-color: #37373F; padding: 10px; width: 35%;">
+        <label style="color: #FF6759">Select your gate type:
+            <select class="text" name="class1" id="class1">
+                <option value="not"><NOT></NOT></option>
+                <option value="and">AND</option>
+                <option value="or">OR</option>
+                <option value="nand">NAND</option>
+                <option value="nor">XOR</option>
+                <option value="xor">XOR</option>
+            </select>
+        </label>
+        <h4 style="color: #ffffff">What are the inputs?</h4>
+        <label id="i1" style="color: #FFD044">Input one
+            <select class="text" name="inOneVal" id="InOneVal">
+                <option value="one">On (1)</option>
+                <option value="zero">Off (0)</option>
+            </select>
+        </label>
+        <label id="i2" style="color: #FFD044">Input Two
+            <select class="text" name="inOneVal" id="InTwoVal">
+                <option value="one">On (1)</option>
+                <option value="zero">Off (0)</option>
+            </select>
+        </label>
+    </form>
 </body>
 </html>
